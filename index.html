@@ -1,106 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What's In My Fridge?</title>
-    <!-- May to link Foundation? cdn here -->
-    <!-- May to link style sheet here -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
+<!-- always use (example-one) casing with dashes -->
 <body>
-    <!-- header container -->
     <header class="header">
-        <div>
-<!-- May to make header blue via css, div may not be needed -->
-        </div>
+    
     </header>
 
-    <!-- hero image container -->
     <main>
-        <!-- i do not have the correct image, this can also be added via css if it is easier for you to style -->
-        <img src="./assets/images/fridge-stock-photo.jpg">
-        <!-- smaller chef image needs to be style bottom middle of this image, with a z-index of +1 or other
-        similar method to display on top of fridge photo -->
-        
-        <!-- Recipe Decider h1, what's in my fridge text h4, search bar,
-        i'm to lazy to look container, and hey i'm chef Sam text container -->
-        
-        <!-- text -->
-        <div id="back-to-top">
+        <!-- change image to one may originally had, in slack channel -->
+        <img src="./assets/images/fridge.jpg">
+        <!-- smaller chef image needs to be style bottom middle of this image, with a z-index of +1 or other similar method to display on top of fridge photo -->
+        <img src="./assets/images/chef-logo-01.png">
+
+        <section id="back-to-top">
             <h1>Recipe Decider</h1>
             <h4>What's in my fridge?</h4>
-        </div>
-
-        <!-- search bar, obviously needs to be tweaker with css, feel free to edit any html required -->
-        <div>
+        </section>
+        
+        <form>
+            <!-- change type to submit and add id = user-input -->
             <input type="text" id="" placeholder="Search..">
-        </div>
-
-        <!-- laaaaazy -->
-        <div>
-            <button type="button">I'm too lazy to look!</button>
-        </div>
-
-        <!-- chef Sammy boii -->
-
-        <div>
+            <input type="submit" id="user-input">
+        </form>
+        
+            <button type="button" id="lazy-btn">I'm too lazy to look!</button>
+        
             <h3>Hey, I'm chef Sam,</h3>
             <h3>happy to help...</h3>
-        </div>
-
+        <!-- add a section with id = recipes -->
     </main>
 
-
-    <!-- Filipe has a choice to make, i'll make an empty container here to be populated,
-    or you can not use it and create it all in javascript -->
-
-    <main>
-        <!-- previous searchs in column left, possible columns = col-4, allows room for padding -->
-        <aside>
-            <div>
-                <p>lettuce</p>
-                <p>chicken</p>
-                <p>mayo</p>
-                <p>potato</p>
-                <p>bread</p>
-                <!-- previous searches listed here -->
-            </div>
-        </aside>
-
-        <!-- this section should be style to the right, possible columns = col-6, allows room for padding-->
-        <section>
-
-        <!-- these 2 divs will go side by side as per reference picture -->
-            <div>
-        <!-- javascript to dynamically generate recipe -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                 Aliquam cumque, dignissimos eos unde nam labore error dolorum<br>
-                  molestiae facilis nesciunt iure earum culpa, tempore voluptate<br>
-                   accusantium nemo assumenda, amet qui.</p>                
-            </div>
-
-            <div>
-        <!-- javascript to dynamically generate recipe image -->
-                <img src="./assets/images/hamburger.jpg">
-            </div>
-        </section>
-
-    </main>
-
-    <!-- footer with back to top -->  
-    
     <footer class="footer">
-        <div>
-            <a href="#back-to-top">Back To Top</a>
-        </div>
+        
     </footer>
-
-<!-- Filipe to link script here -->
-
 </body>
-
 </html>
