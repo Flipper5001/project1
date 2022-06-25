@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Praise&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+/*Div header*/
+#header {
+    background-color:var(--primary-colour);
+    height: 60px;
+    color: var(--color-white);
+    padding: 8px;
+}
+
+#header>h3 {
+    opacity: 25%;
+    font-size: 1.5rem;
+}
+
+/*Top Main*/
+body {
+    background-color: var(--color-white);
+}
+
+#top-img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover; 
+    object-position: bottom;
+}
+
+.top-logo {
+    display: flex;
+    width: 200px;
+    margin: -6rem auto 0 auto;
+}
+
+/*Back to Top*/
+.recipeDecider {
+    font-family: 'Praise', cursive;
+    font-size: 5.5rem;
+    margin: 2rem;
+}
+
+.subFront {
+    font-family: var(--main-font);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: -40px;
+}
+
+/*Form Main*/
+#form-index {
+    max-width: 40rem;
+    /* margin: 100px auto 0 auto; */
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+
+#user-input {
+    height: 5rem;
+    font-weight: 500;
+    font-size: 2rem;
+    border-radius: 15px 0 0 15px;
+}
+
+#submit-label {
+    font-size: 1.5rem;
+    border-radius: 0 15px 15px 0;
+    background-color: var(--primary-colour);
+}
+
+#submit-label:hover {
+    background-color: var(--secondary-colour);
+}
+
+/*Im lazy to look button*/
+#lazy-btn {
+    background-color: var(--secondary-colour);
+    border-radius: 15px;
+    width: 480px;
+    margin-bottom: 60px;
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+#lazy-btn:hover, .search-history:hover {
+    background-color: var(--secondary-colour);
+    animation: pulsate 1s ease-in-out;
+}
+
+/*Hands Arrow*/
+.arrowTop {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.arrowTop i {
+    color: var(--secondary-colour);
+    font-size: 5rem;
+    display: block;
+    margin: 0 auto -15px auto;
+}
+
+/*Check animate.css [for Shake]*/
+#pointUp:hover {
+    margin: 10px auto -5px auto;
+    animation: ease-in-out;
+    cursor:pointer;
+    animation: shake .25s;
+}
+
+#footer {
+    background-color: var(--primary-colour);
+    height: 60px;
+    margin: 0;
+}
+
+/* search history */
+.search-history {
+    background-color: var(--secondary-colour);
+    width: 95%;
+    font-size: 1.25rem;
+    border-radius: 15px;
+}
+
+/* JS recipes */
+#recipes {
+    background-color: rgb(235, 235, 235);
+}
+
+.recipe-info>h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.recipe-card {
+    display: flex;
+}
+
+.recipe-info {
+    /* border: 2px var(--secondary-colour) solid; */
+    /* maybe? */
+    background-color: var(--primary-colour);
+    color: var(--color-white);
+    padding: 32px;
+    margin: 16px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.recipe-img {
+    margin: 16px 0px 0px 16px;
+    width: 400px; 
+    height: 350px;
+    border-radius: 15px;
+}
+
+.recipe-ingredients {
+    color: var(--secondary-colour);
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 1024px) {
+    .recipe-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
