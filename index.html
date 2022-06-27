@@ -24,7 +24,6 @@
         <h3 class="grid-margin-y">Hey, I'm chef Sam, happy to help...</h3>
     </header>
     
-    
     <!--Top Main-->
     <main>
         <section class="flex-container flex-dir-column align-center-middle"> 
@@ -34,8 +33,8 @@
             <img class="top-logo" src="./assets/images/chef-logo-01.png" alt="recipe decider logo">
             
             <!--Back to Top-->
-            <h1 class="recipeDecider" id="back-to-top">Recipe Decider</h1>
-            <h4 class="subFront">What's in my fridge?</h4>
+            <h1 class="recipe-decider" id="back-to-top">Recipe Decider</h1>
+            <h4 class="sub-font">What's in my fridge?</h4>
             
             <!-- submit form -->
             <form class="input-group" id="form-index">
@@ -51,20 +50,20 @@
         </section>
         
         <!-- add a section with id = recipes -->
-        <section class="column medium-12 large-3 text-center" id="past-results"></section>
-        <section class="column medium-12 large-9" id="recipes"></section>
+        <section class="text-center" id="past-results"></section>
+        <section id="recipes"></section>
 
         <!-- second api -->
-        <section id=""></section>
+        <h3 id='movies-header' class="none">Movies of Food</h3>
+        <section id="movies" class="flex-container align-justify flex-child-auto"></section>
         
+        <!--Hands Arrow-->
+        <!--May added the section for footer info placeholder-->
+        <!--Button function to go on top-->
+        <section class="arrow-top">
+            <button type="button" id="point-up"><a href="#back-to-top"><i class="fa-solid fa-hand-point-up"></i></a></button> 
+        </section>
     </main>
-
-    <!--Hands Arrow-->
-    <!--May added the section for footer info placeholder-->
-    <!--Button function to go on top-->
-    <section class="arrowTop">
-       <button type="button" id="pointUp"><a href="#back-to-top"><i class="fa-solid fa-hand-point-up"></i></a></button> 
-    </section>
 
     <footer class="grid-x grid-padding-x align-bottom" id="footer"></footer>
 
@@ -74,6 +73,7 @@
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
     <!--For icons-->
     <script src="https://kit.fontawesome.com/77e280daa8.js" crossorigin="anonymous"></script>
+    <!-- App JS -->
     <script src="./assets/javascript/app.js"></script>
   </body>
 </html>

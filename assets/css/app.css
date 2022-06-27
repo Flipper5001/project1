@@ -17,6 +17,11 @@
 /*Top Main*/
 body {
     background-color: var(--color-white);
+    font-family: var(--main-font);
+}
+
+.button:focus {
+    background-color: var(--primary-colour);
 }
 
 #top-img {
@@ -33,17 +38,17 @@ body {
 }
 
 /*Back to Top*/
-.recipeDecider {
+.recipe-decider {
     font-family: 'Praise', cursive;
     font-size: 5.5rem;
-    margin: 2rem;
+    margin: 1rem 2rem 1rem 2rem;
 }
 
-.subFront {
+.sub-font {
     font-family: var(--main-font);
     font-size: 2rem;
     font-weight: 700;
-    margin-top: -40px;
+    margin-bottom: 20px;
 }
 
 /*Form Main*/
@@ -87,14 +92,14 @@ body {
 }
 
 /*Hands Arrow*/
-.arrowTop {
+.arrow-top {
     display: flex;
     justify-content: center;
     margin: auto;
     position: relative;
 }
 
-.arrowTop i {
+.arrow-top i {
     color: var(--secondary-colour);
     font-size: 5rem;
     display: block;
@@ -102,7 +107,7 @@ body {
 }
 
 /*Check animate.css [for Shake]*/
-#pointUp:hover {
+#point-up:hover {
     margin: 10px auto -5px auto;
     animation: ease-in-out;
     cursor:pointer;
@@ -146,6 +151,7 @@ body {
     margin: 16px;
     border-radius: 15px;
     width: 100%;
+    min-height: 350px;
 }
 
 .recipe-img {
@@ -160,6 +166,27 @@ body {
     font-size: 1.1rem;
     margin: 0;
     font-weight: bolder;
+}
+/* generates movies, reasponsive to size please
+#movies {
+    background-color: rgb(235, 235, 235);
+} */
+
+#movies-header {
+    margin: 10px 0px;
+    background-color: var(--primary-colour);
+    text-align: center;
+    color: var(--color-white);
+    padding: 10px 0px;
+    font-weight: 200;
+}
+
+.alert {
+    background-color: rgb(204, 47, 47);
+}
+
+.none {
+    display: none;
 }
 
 @media screen and (max-width: 1024px) {
