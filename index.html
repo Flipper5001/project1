@@ -4,90 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What's In My Fridge?</title>
-    <!--May's Added -->
-    <link rel="stylesheet" href="./css/foundation.css">
-    <!--May's style sheet-->
-    <link rel="stylesheet" href="./css/app.css">
-    <link rel="stylesheet" href="./css/animate.css">
-
-
-    <link rel="stylesheet" href="./css/reset.css">
-
+    <!-- Compressed Foundation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
     <!--Google font links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Google Font for Logo-->
     <link href="https://fonts.googleapis.com/css2?family=Praise&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <!--Google Font for Main-->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
+    <!--May's style sheet-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <title>What's In My Fridge?</title>
 </head>
 
 <body>
-    <div  class="grid-x grid-padding-x" id="header"></div>
+    <!-- Header Element -->
+    <header class="grid-x grid-padding-x align-center-middle" id="header">
 
+        <!--May add container (A), h3 need a placeholder container-->
+        <span class="header-sub">
+            <!--Typing Effect-->
+            <h3 class="grid-margin-y" id="header-txt">Hey, I'm chef Sam, happy to help...</h3>
+        </span>
+        
+    </header>
+    
     <!--Top Main-->
-    <main class="row align-center" id="mainSection">
-        <!-- change image to one may originally had, in slack channel -->
-        <img src="./assets/man-scratching-his-head-01.png" alt="man scratching head looking in the fridge" id="top-img">
-        <!-- smaller chef image needs to be style bottom middle of this image, with a z-index of +1 or other similar method to display on top of fridge photo -->
-        <img class="top-logo" src="./assets/chef-logo-01.png" alt="recipe decider logo">
-
-        <!--Back to Top-->
-        <section id="back-to-top">
-            <h1 class="recipeDecider">Recipe Decider</h1>
-            <h4 class="subFront">What's in my fridge?</h4>
+    <main>
+        <section class="flex-container flex-dir-column align-center-middle"> 
+            <!-- change image to one may originally had, in slack channel -->
+            <img src="./assets/images/vector-man-scratching-head-01.png" alt="man scratching head looking in the fridge" id="top-img">
+            <!-- smaller chef image needs to be style bottom middle of this image, with a z-index of +1 or other similar method to display on top of fridge photo -->
+            <img class="top-logo" src="./assets/images/chef-logo-01.png" alt="recipe decider logo">
+            
+            <!--Back to Top-->
+            <h1 class="recipe-decider" id="back-to-top">Recipe Decider</h1>
+            <h4 class="sub-font">What's in my fridge?</h4>
+            
+            <!-- submit form -->
+            <form class="input-group" id="form-index">
+                <input class="input-group-field" type="text" id="user-input" placeholder="What's in the fridge?..">
+                <section class="input-group-button">
+                    <input type="submit" class="button" value="Submit" id="submit-label">
+                </section>
+            </form>
+            
+            <!--Im lazy to look button-->
+            <button class="button expanded" type="button" id="lazy-btn">I'm too lazy to look!</button>
+            
         </section>
         
-        <!-- ...Original HTML
-        <form id="submit">
-            <input type="text" id="user-input" placeholder="What's in the fridge?..">
-            <input type="submit">
-        </form>
-        -->
-        
-        <!--Form Main : edited-->
-        <form class="input-group" id="form-index">
-            <input class="input-group-field" type="text" id="user-input" placeholder="What's in the fridge?..">
-            <div class="input-group-button">
-              <input type="submit" class="button" value="Submit" id="submit-label">
-            </div>
-        </form>
-        
-        <!--Im lazy to look button-->
-        <button class="button expanded" type="button" id="lazy-btn">
-            <p>I'm too lazy to look!</p>
-        </button>
-        
-        <h3>Hey, I'm chef Sam,</h3>
-        <h3>happy to help...</h3>
         <!-- add a section with id = recipes -->
+        <section class="text-center" id="past-results"></section>
+        <section id="recipes"></section>
 
-        <section id="recipes">
-
+        <!-- second api -->
+        <h3 id='movies-header' class="none">Movies of Food</h3>
+        <section id="movies" class="flex-container align-justify flex-child-auto"></section>
+        
+        <!--Hands Arrow-->
+        <!--May added the section for footer info placeholder-->
+        <!--Button function to go on top-->
+        <section class="arrow-top">
+            <button type="button" id="point-up"><a href="#back-to-top"><i class="fa-solid fa-hand-point-up"></i></a></button> 
         </section>
     </main>
 
-    <!--Hands Arrow-->
-    <!--May added the section for footer info placeholder-->
-    <!--Button function to go on top-->
-    <div class="arrowTop">
-       <button type="button" id="pointUp"><i class="fa-solid fa-hand-point-up"></i></button> 
-    </div>
-
     <footer class="grid-x grid-padding-x align-bottom" id="footer"></footer>
 
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- foundation JS -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
     <!--For icons-->
     <script src="https://kit.fontawesome.com/77e280daa8.js" crossorigin="anonymous"></script>
+    <!-- App JS -->
+    <script src="./assets/javascript/app.js"></script>
   </body>
-</html>
-
-</body>
 </html>

@@ -30,4 +30,5 @@ ol, ul, li {
     --primary-colour: rgb(3, 97, 107);
     --secondary-colour: rgb(255, 163, 0);
     --main-font: 'DM Sans', sans-serif;
+    --color-white: #fff;
 }
