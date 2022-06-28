@@ -60,5 +60,5 @@ Movies, No Food Results<br>
 ![movies-no-food](/assets/images/no-food-movies.png)
 
 ## Links to Repository and Deployed Site
-- Repository - 
-- Live URL - 
+- Repository - https://github.com/Flipper5001/recipe-decider
+- Live URL - https://flipper5001.github.io/recipe-decider/
