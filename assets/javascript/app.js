@@ -8,7 +8,7 @@ const lazyBtn = document.getElementById('lazy-btn');
 const moviesEl = document.getElementById('movies');
 const moviesHeader = document.getElementById('movies-header');
 
-function getRandomMovies(){
+function generateRandomMovies(){
 
     moviesHeader.classList.remove('none');
     moviesEl.textContent= ''
@@ -52,17 +52,11 @@ submitFormEl.addEventListener('submit', function(event){
     
     if (!pastResults.includes(search)){
         pastResults.unshift(search);
-        localStorage.setItem('history', JSON.stringify(pastResults));
     };
     
     userInput.value = '';
-    
-    generateSearchHistory();
-    
+
     ingredientSearch(searchPlus)
-    // issue: after generating random recipe, then searching for one, the random recipes do no disappear and remain
-    getRandomMovies();
-    
 })
 
 lazyBtn.addEventListener('click', function(event){
@@ -77,7 +71,7 @@ lazyBtn.addEventListener('click', function(event){
         return recipeInformation(foodData.recipes);
     })
     .then(function(){
-        getRandomMovies();
+        generateRandomMovies();
     })
 })
 
@@ -88,6 +82,7 @@ function ingredientSearch(searchPlus){
     })
     .then(function(foodData){
         if (foodData.length === 0){
+            recipeCreationEl.textContent = '';
             const h2 = document.createElement('h2');
             h2.setAttribute('class','text-center sub-font alert')
             h2.textContent = 'No food found, but we did find these movies of food :)'
@@ -101,6 +96,10 @@ function ingredientSearch(searchPlus){
 function recipeInformation(foodData){
 
     recipeCreationEl.textContent = '';
+
+    localStorage.setItem('history', JSON.stringify(pastResults));
+    generateSearchHistory();
+    generateRandomMovies();
     
     for (let i = 0; i < 4; i++) {
         fetch(`https://api.spoonacular.com/recipes/${foodData[i].id}/information?apiKey=196192673e7b41b2b8a7e8f82c389470&includeNutrition=false`)
@@ -193,10 +192,11 @@ function generateSearchHistory(){
         button.addEventListener('click', function(){
             const searchPlus = (button.textContent).replaceAll(' ','+')
             ingredientSearch(searchPlus)
+            generateRandomMovies();
         })
         
         pastSearchesEl.appendChild(button);
     }
 }
 
-generateSearchHistory();    
+generateSearchHistory();

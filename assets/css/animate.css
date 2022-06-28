@@ -1,31 +1,56 @@
 @keyframes shake {
-    10% {transform: rotate(15deg);}
-    20% {transform: rotate(-15deg);}
-    30% {transform: rotate(15deg);}
-    40% {transform: rotate(-15deg);}
+  10% {transform: rotate(15deg);}
+  20% {transform: rotate(-15deg);}
+  30% {transform: rotate(15deg);}
+  40% {transform: rotate(-15deg);}
 }
 
 @keyframes pulsate {
-    0% {
-        box-shadow:
-        0 0 15px rgb(230, 195, 134),
-        0 0 20px rgb(196, 124, 1);
-    }
+  0% {
+      box-shadow:
+      0 0 15px rgb(230, 195, 134),
+      0 0 20px rgb(196, 124, 1);
+  }
 }
 
 @keyframes typewriter {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 50%;
-    }
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
 }
-  @keyframes blink {
-    from {
-      border-color: black;
-    }
-    to {
-      border-color: transparent;
-    }
+@keyframes blink {
+  from {
+    border-color: black;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+
+/* Header element > Typing effect [Hey....] (A)*/
+#header-txt {
+border-right: 3px solid rgba(255, 255, 255, 0.911);
+animation: typewriter 5s steps(7) infinite, blinking-cursor 0.8s infinite;
+animation-fill-mode: forwards;
+}
+
+/* text animation */
+
+@keyframes typewriter {
+0% { width:0 }
+25% { width: 70% }
+48% { width: 100% }
+50% { width: 100% }
+55% { width: 100% }
+75% { width: 70%; }
+85% { width: 30%; }
+100% { width: 0; }
+}
+
+@keyframes blinking-cursor {
+from { border-color: transparent }
+to { border-color: #ffffff }
 }

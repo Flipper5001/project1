@@ -5,13 +5,22 @@
 #header {
     background-color:var(--primary-colour);
     height: 60px;
-    color: var(--color-white);
     padding: 8px;
 }
 
-#header>h3 {
-    opacity: 25%;
+/*h3 placeholder*/
+.header-sub {
+    margin: 0 auto 0 auto; 
+}
+
+/* Header element > Typing effect [Hey....] (A)*/
+#header-txt {
     font-size: 1.5rem;
+    font-weight: 300;
+    overflow: hidden;
+    color: rgba(255,255,255,.90);
+    margin: 0 auto;
+    white-space: nowrap;
 }
 
 /*Top Main*/
@@ -24,11 +33,12 @@ body {
     background-color: var(--primary-colour);
 }
 
+/*May changes*/
 #top-img {
-    height: 500px;
     width: 100%;
-    object-fit: cover; 
-    object-position: bottom;
+    display: block;
+    z-index: -1;
+    margin: -20px auto 0 auto;
 }
 
 .top-logo {
@@ -53,16 +63,15 @@ body {
 
 /*Form Main*/
 #form-index {
-    max-width: 40rem;
-    /* margin: 100px auto 0 auto; */
+    max-width: 30rem;
     font-family: var(--main-font);
     font-weight: 500;
 }
 
 #user-input {
-    height: 5rem;
-    font-weight: 500;
-    font-size: 2rem;
+    height: 3.40rem; /*May changed the size fr: 5*/
+    font-weight: 200; /*May changed the weight fr: 500*/
+    font-size: 1.5rem;
     border-radius: 15px 0 0 15px;
 }
 
@@ -80,9 +89,11 @@ body {
 #lazy-btn {
     background-color: var(--secondary-colour);
     border-radius: 15px;
-    width: 480px;
-    margin-bottom: 60px;
+    width: 380px;
+    margin-bottom: 65px;
+    padding: 10px;
     font-size: 1.75rem;
+    height: 3.15rem;
     font-weight: 400;
 }
 
@@ -143,8 +154,6 @@ body {
 }
 
 .recipe-info {
-    /* border: 2px var(--secondary-colour) solid; */
-    /* maybe? */
     background-color: var(--primary-colour);
     color: var(--color-white);
     padding: 32px;
@@ -167,10 +176,15 @@ body {
     margin: 0;
     font-weight: bolder;
 }
-/* generates movies, reasponsive to size please
+
+/*Movies placeholder*/
 #movies {
-    background-color: rgb(235, 235, 235);
-} */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    gap: 30px;
+}
 
 #movies-header {
     margin: 10px 0px;
@@ -195,5 +209,76 @@ body {
         align-items: center;
     }
 
+
+}
+
+/*---- Media Queries ----*/
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+
+    *, body, html,
+
+    /*from top to bottom*/
+    #header-txt {
+        font-size: 1.15rem;
+    }
+    .top-logo {
+        display: flex;
+        width: 250px;
+        margin: 50px auto 0 auto;
+    }
+    #top-img {
+        display: none;
+    }
+    .recipe-decider {
+        font-size: 3.6rem;
+    }
+    .sub-font {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 20px auto 10px auto;
+    }
+    #form-index {
+        width: 90%;
+        margin: 0px 20px;
+        display: grid;
+        padding: 10px;
+    }
+    #user-input {
+        height: 2.8rem;
+        font-size: 1.25rem;
+        border-radius: 15px;
+    }
+    #submit-label {
+        width: 280px;
+        height: 50px;
+        font-size: 1.25rem;
+        border-radius: 15px;
+        margin: 15px auto;
+        background-color: var(--primary-colour);
+    }
+        #submit-label:hover {
+            background-color: var(--secondary-colour);
+        }
+    
+    #lazy-btn {
+        width: 280px;
+        margin-bottom: 90px;
+        padding: 10px;
+        font-size: 1.25rem;
+    }
+
+    /*Movies placeholder*/
+    #movies {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        gap: 30px;
+    }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
 
 }
