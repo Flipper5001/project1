@@ -1,4 +1,4 @@
-# Project 1 - Team Project
+# Project 1 - What's in your fridge?
 
 ## Description
 In the first project of the UWA Coding BootCamp, Filipe, May, Dan, and Vittorio have been tasked with working collaboratively in a group to create an application that solves a real world problem.
@@ -16,10 +16,10 @@ As someone who has come home after a long and tiring day of work, i want to get 
 ## Skills Used
 After deciding what issue we were to solve, the wireframing begun;
 
-Desktop
+Desktop<br>
 ![desktop](/assets/images/wireframe-desktop-readme.PNG)
 
-Mobile
+Mobile<br>
 ![mobile](/assets/images/wireframe-mobile-readme.png)
 
 After a group effort of designing the layout, the next step was the create a New Project on Github, with this being done, we now have access to a job board to create and deligate tasks to everyone involved.
