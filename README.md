@@ -1,5 +1,12 @@
 # Project 1 - What's in your fridge?
 
+## Table of Contents
+1. [Description](#description)
+2. [Key-Points](#key-points)
+3. [User-Story](#user-story)
+4. [Skills-Used](#skills-used)
+5. [Final-Product](#final-product)
+
 ## Description
 In the first project of the UWA Coding BootCamp, Filipe, May, Dan, and Vittorio have been tasked with working collaboratively in a group to create an application that solves a real world problem.
 
@@ -8,7 +15,7 @@ Once a problem has been identified and the app created, it is our job as a group
 ## Key Points
 Working in a group this time around means that the entirity of the site is not made by just one person, the duties are divided amongst the group. That being said, even though it was not mandatory to appoint a team lead, we unanamously agreed that Filipe was the best candidate to guide us through this body of work.
 
-The early stages of developement consisted of our group of 4 bouncing ideas off each other and determining what and reviewing the acceptance criteria of the project, and streamling that in to what would become our final product.
+The early stages of developement consisted of our group of 4 bouncing ideas off each other and reviewing the acceptance criteria of the project, and streamling that in to what would become our final product.
 
 ## User Story
 As someone who has come home after a long and tiring day of work, i want to get a recipe from ingredients that i have in my fridge without having to go shopping, so that i can solve my hunger issues.
@@ -33,3 +40,20 @@ We use client side storage to store previous searches and display them as a butt
 The site as a whole has a responsive design for desktop and mobile applications, as well as have a good looking polished user interface.
 
 ## Final Product
+Landing<br>
+![landing-page](/assets/images/landing.png)
+
+Mobile View<br>
+![mobile-view](/assets/images/mobile.png)
+
+Recipes<br>
+![recipes](/assets/images/recipes.png)
+
+Recipe, Single Card<br>
+![recipe-single-card](/assets/images/recipe-single.png)
+
+Movies<br>
+![movies](/assets/images/movies.png)
+
+Movies, No Food Results<br>
+![movies-no-food](/assets/images/no-food-movies.png)
