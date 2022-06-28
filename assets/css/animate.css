@@ -32,25 +32,25 @@
 
 /* Header element > Typing effect [Hey....] (A)*/
 #header-txt {
-border-right: 3px solid rgba(255, 255, 255, 0.911);
-animation: typewriter 5s steps(7) infinite, blinking-cursor 0.8s infinite;
-animation-fill-mode: forwards;
+  border-right: 3px solid rgba(255, 255, 255, 0.911);
+  animation: typewriter 5s steps(7) infinite, blinking-cursor 0.8s infinite;
+  animation-fill-mode: forwards;
 }
 
 /* text animation */
 
 @keyframes typewriter {
-0% { width:0 }
-25% { width: 70% }
-48% { width: 100% }
-50% { width: 100% }
-55% { width: 100% }
-75% { width: 70%; }
-85% { width: 30%; }
-100% { width: 0; }
+  0% { width:0 }
+  25% { width: 70% }
+  48% { width: 100% }
+  50% { width: 100% }
+  55% { width: 100% }
+  75% { width: 70%; }
+  85% { width: 30%; }
+  100% { width: 0; }
 }
 
 @keyframes blinking-cursor {
-from { border-color: transparent }
-to { border-color: #ffffff }
+  from { border-color: transparent }
+  to { border-color: #ffffff }
 }
