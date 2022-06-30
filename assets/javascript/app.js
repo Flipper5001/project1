@@ -70,9 +70,8 @@ lazyBtn.addEventListener('click', function(event){
     .then(function(foodData){
         return recipeInformation(foodData.recipes);
     })
-    .then(function(){
-        generateRandomMovies();
-    })
+    
+    generateRandomMovies();
 })
 
 function ingredientSearch(searchPlus){
